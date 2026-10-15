@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "title": "Launch v1.2",
+  "nextId": 12,
+  "lists": [
+    { "name": "Build", "items": [
+      { "id": 1, "title": "Rate limiter for the public API", "status": "done", "updated": "" },
+      { "id": 2, "title": "Migrate sessions to Redis", "status": "done", "updated": "" },
+      { "id": 3, "title": "Fix flaky checkout test", "status": "doing", "note": "reproduced, bisecting", "updated": "" },
+      { "id": 4, "title": "Feature flag for new pricing page", "status": "todo", "updated": "" }
+    ]},
+    { "name": "Release", "items": [
+      { "id": 5, "title": "Changelog + upgrade notes", "status": "todo", "updated": "" },
+      { "id": 6, "title": "Tag v1.2 and publish", "status": "blocked", "note": "waiting on security review", "updated": "" },
+      { "id": 7, "title": "Smoke test production", "status": "todo", "updated": "" }
+    ]},
+    { "name": "Launch", "items": [
+      { "id": 8, "title": "Blog post draft", "status": "done", "updated": "" },
+      { "id": 9, "title": "Demo video", "status": "todo", "updated": "" },
+      { "id": 10, "title": "Post to the community forum", "status": "todo", "updated": "" },
+      { "id": 11, "title": "Reply to launch feedback", "status": "todo", "updated": "" }
+    ]}
+  ]
+}

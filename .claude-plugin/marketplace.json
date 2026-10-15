@@ -1,0 +1,13 @@
+{
+  "name": "docket",
+  "owner": {
+    "name": "Michal Strnadel"
+  },
+  "plugins": [
+    {
+      "name": "docket",
+      "source": "./",
+      "description": "A minimal task board inside Claude Code: a band above the prompt, a board pane, and a tool the model keeps it current with. Survives crashes."
+    }
+  ]
+}

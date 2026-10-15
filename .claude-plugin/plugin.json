@@ -1,0 +1,19 @@
+{
+  "name": "docket",
+  "version": "0.1.0",
+  "description": "A minimal task board inside Claude Code: a band above the prompt, a board pane, and a tool the model keeps it current with. Survives crashes.",
+  "author": {
+    "name": "Michal Strnadel"
+  },
+  "license": "MIT",
+  "keywords": [
+    "tasks",
+    "todo",
+    "kanban",
+    "board",
+    "productivity"
+  ],
+  "types": "./types/index.d.ts",
+  "homepage": "https://github.com/michalstrnadel/claude-docket",
+  "repository": "https://github.com/michalstrnadel/claude-docket"
+}
