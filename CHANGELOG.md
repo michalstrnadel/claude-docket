@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Band: a task id no longer wraps under a long title (`#10` rendered as `#1` with `0` on the next line).
+
 ## 0.1.0 — 2026-10-15
 
 First release.
