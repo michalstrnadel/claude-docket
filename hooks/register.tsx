@@ -296,8 +296,11 @@ export const register: Register = on => {
           </Box>
           {shown.map(t => (
             <Box key={`band:${t.id}`} flexDirection="row" gap={1} paddingLeft={2}>
-              <Text color={TONE[t.status]}>{GLYPH[t.status]}</Text>
-              <Text dimColor tabular>#{t.id}</Text>
+              {/* The id never shrinks: under a long title, flex squeezed "#10" into "#1"/"0". */}
+              <Box flexShrink={0} gap={1}>
+                <Text color={TONE[t.status]}>{GLYPH[t.status]}</Text>
+                <Text dimColor tabular wrap="truncate">#{t.id}</Text>
+              </Box>
               <Text color={t.status === 'doing' ? 'warning' : undefined} wrap="truncate-end">{t.title}</Text>
               {t.note ? <Text dimColor italic wrap="truncate-end">{t.note}</Text> : null}
             </Box>
