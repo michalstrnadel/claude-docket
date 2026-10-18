@@ -296,8 +296,10 @@ export const register: Register = on => {
           </Box>
           {shown.map(t => (
             <Box key={`band:${t.id}`} flexDirection="row" gap={1} paddingLeft={2}>
-              {/* The id never shrinks: under a long title, flex squeezed "#10" into "#1"/"0". */}
-              <Box flexShrink={0} gap={1}>
+              {/* The id never shrinks: under a long title, flex squeezed "#10" into "#1"/"0".
+                  flexShrink alone was not enough ("#27" still split into "#2"/"7" once the
+                  row overflowed), so the box gets an explicit width: glyph + gap + "#id". */}
+              <Box flexShrink={0} gap={1} width={2 + String(t.id).length + 1} minWidth={2 + String(t.id).length + 1}>
                 <Text color={TONE[t.status]}>{GLYPH[t.status]}</Text>
                 <Text dimColor tabular wrap="truncate">#{t.id}</Text>
               </Box>
